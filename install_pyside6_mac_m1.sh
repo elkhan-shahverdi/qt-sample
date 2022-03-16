@@ -3,17 +3,17 @@
 # https://gist.githubusercontent.com/elliewhatever/adbe3fba37d747fb8b04af8f835d46d2/raw/61e2bd530eb434f7ea2f595262e1922cdd057f7c/PySide6.sh
 
 # Assumes brew and python are installed
-brew install qt@5 llvm cmake ninja git
+brew install qt@6 llvm cmake ninja git
 
 # Setup environment relative to current directory -
 # this eases building in an existing Python venv.
-mkdir -p ./.pyside2; cd ./.pyside2
+mkdir -p ./.pyside6; cd ./.pyside6
 BUILD_DIR=${PWD}
 
 git clone --recursive https://code.qt.io/pyside/pyside-setup
 
 # Change to match your Qt version:
-QT_VER=5.15.2
+QT_VER=6.2.3
 
 cd pyside-setup && git checkout ${QT_VER}
 python3 -m venv testenv
@@ -25,13 +25,13 @@ export CLANG_INSTALL_DIR=$(brew --prefix)/opt/llvm
 
 CELLAR=/opt/homebrew/Cellar
 # I'm not sure why this is necessary in my environment:
-export QT_PLUGIN_PATH=${CELLAR}/qt@5/${QT_VER}_2/share/qt/plugins
+export QT_PLUGIN_PATH=${CELLAR}/qt/${QT_VER}_1/share/qt/plugins
 
-ln -s ${CELLAR}/qt@5/${QT_VER}_2/libexec/Assistant.app /opt/homebrew/bin/Assistant.app
-ln -s ${CELLAR}/qt@5/${QT_VER}_2/libexec/Designer.app /opt/homebrew/bin/Designer.app
-ln -s ${CELLAR}/qt@5/${QT_VER}_2/libexec/Linguist.app /opt/homebrew/bin/Linguist.app
-ln -s ${CELLAR}/qt@5/${QT_VER}_2/libexec/pixeltool.app /opt/homebrew/bin/pixeltool.app
-ln -s ${CELLAR}/qt@5/${QT_VER}_2/libexec/qdbusviewer.app /opt/homebrew/bin/qdbusviewer.app
+ln -s ${CELLAR}/qt/${QT_VER}_1/libexec/Assistant.app /opt/homebrew/bin/Assistant.app
+ln -s ${CELLAR}/qt/${QT_VER}_1/libexec/Designer.app /opt/homebrew/bin/Designer.app
+ln -s ${CELLAR}/qt/${QT_VER}_1/libexec/Linguist.app /opt/homebrew/bin/Linguist.app
+ln -s ${CELLAR}/qt/${QT_VER}_1/libexec/pixeltool.app /opt/homebrew/bin/pixeltool.app
+ln -s ${CELLAR}/qt/${QT_VER}_1/libexec/qdbusviewer.app /opt/homebrew/bin/qdbusviewer.app
 
 python3 setup.py build --qmake=${CELLAR}/qt/${QT_VER}_1/bin/qmake --build-tests --ignore-git --parallel=8
 
