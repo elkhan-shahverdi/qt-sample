@@ -1,0 +1,13 @@
+Color_Picker_1.0.spec
+Packaging python&qml.pdf
+Packaging.txt
+main.py
+main.pyproject
+rcs/color_dropper.ico
+rcs/logo.png
+requirements.txt
+resources.py
+resources.qrc
+resources/CustomButton.qml
+resources/main.qml
+version_info.txt

@@ -1,0 +1,3 @@
+{
+    "files": ["resources.qrc","rcs/color_dropper.ico","rcs/logo.png","main.py","resources/main.qml","resources/CustomButton.qml"]
+}

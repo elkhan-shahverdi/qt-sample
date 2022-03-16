@@ -1,0 +1,13 @@
+
+
+Full instruction:
+	https://www.learnpyqt.com/courses/packaging-and-distribution/packaging-pyqt5-pyside2-applications-windows-pyinstaller/
+
+
+steps:
+1. open cmd center
+2. run 'pyside2-rcc resources.qrc -o resources.py' to convert the resources to Binary
+3. run 'pyinstaller Color_Picker_1.0.spec'
+
+Notice:
+	*** Always update resources.qrc and follow the above steps for deploying ***

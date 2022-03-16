@@ -1,0 +1,11 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="resources">	
+			<file alias="main.qml">resources/main.qml</file>	
+			<file alias="CustomButton.qml">resources/CustomButton.qml</file>
+    </qresource>
+	<qresource prefix="rcs">
+			<file alias="color_dropper.ico">rcs/color_dropper.ico</file>
+			<file alias="logo.png" >rcs/logo.png</file>
+    </qresource>
+</RCC>
