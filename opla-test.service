@@ -1,0 +1,13 @@
+[Unit]
+Description=Opla Test Gui
+After=graphical.target
+
+[Service]
+Type=idle
+Environment=DISPLAY=:0
+Restart=on-failure
+User=sahverdiyev
+ExecStart=/usr/bin/python3.8 /home/sahverdiyev/main.py
+
+[Install]
+WantedBy=multi-user.target
