@@ -1,16 +1,12 @@
-import os
 
 import os, sys
 
 from PySide2 import QtGui
-from PySide2 import QtQml
-from PySide2 import QtCore
 from PySide2.QtQml import QQmlApplicationEngine
 from PySide2.QtCore import QUrl
 from PySide2.QtWidgets import QApplication
 
 import resources
-
 
 
 try:
