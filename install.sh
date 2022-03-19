@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-sudo apt update
-sudo apt install tasksel
-sudo tasksel install ubuntu-desktop
 git clone https://github.com/elkhan-shahverdi/qt-sample.git
 cd qt-sample/
 sudo apt update
