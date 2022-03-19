@@ -2,12 +2,12 @@ import os
 
 import os, sys
 
-from PySide6 import QtGui
-from PySide6 import QtQml
-from PySide6 import QtCore
-from PySide6.QtQml import QQmlApplicationEngine
-from PySide6.QtCore import QUrl
-from PySide6.QtWidgets import QApplication
+from PySide2 import QtGui
+from PySide2 import QtQml
+from PySide2 import QtCore
+from PySide2.QtQml import QQmlApplicationEngine
+from PySide2.QtCore import QUrl
+from PySide2.QtWidgets import QApplication
 
 import resources
 
@@ -15,7 +15,7 @@ import resources
 
 try:
     # Include in try/except block if you're also targeting Mac/Linux
-    from PySide6.QtWinExtras import QtWin
+    from PySide2.QtWinExtras import QtWin
     myappid = 'OplaEnergy.ColorPicker.1.0'
     QtWin.setCurrentProcessExplicitAppUserModelID(myappid)
 except ImportError:
