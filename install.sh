@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-git clone https://github.com/elkhan-shahverdi/qt-sample.git
-cd qt-sample/
 sudo apt update
 sudo apt install -y python3-pip
 sudo apt install -y net-tools
