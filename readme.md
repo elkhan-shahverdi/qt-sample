@@ -7,6 +7,12 @@ Install Ubuntu Desktop if necessary
     sudo tasksel install ubuntu-desktop
 ```
 
+or
+
+```shell
+    sudo apt install x-window-system
+```
+
 1. Clone Project to Server
    ```shell
     git clone https://github.com/elkhan-shahverdi/qt-sample.git
@@ -15,10 +21,10 @@ Install Ubuntu Desktop if necessary
 2. Install Dependencies
    ```shell
     sudo apt update
-    sudo apt install python3-pip
-    sudo apt install net-tools
-    sudo apt-get install build-essential
-    sudo apt install qt5-default
+    sudo apt install -y python3-pip
+    sudo apt install -y net-tools
+    sudo apt install -y build-essential
+    sudo apt install -y qt5-default
    ```
 3. Install PySide2
    ```shell    
@@ -33,17 +39,17 @@ Install Ubuntu Desktop if necessary
 5. Service Management
     1. Start Service
        ```shell
-       sudo systemctl start opla-test.servic
+       sudo systemctl start opla-test.service
        ```
     2. Stop Service
        ```shell
-       sudo systemctl stop opla-test.servic
+       sudo systemctl stop opla-test.service
        ```
     3. Restart Service
        ```shell
-       sudo systemctl restart opla-test.servic
+       sudo systemctl restart opla-test.service
        ```
     4. Status Service
        ```shell
-       sudo systemctl status opla-test.servic
+       sudo systemctl status opla-test.service
        ```
