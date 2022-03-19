@@ -1,7 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.11
-import Qt.labs.platform
+import QtQuick.Dialogs 1.3
 
 import './' as MyCustomComponents   // all the components in the same directory
 
