@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 git pull origin master
-sudo systemctl start opla-test.service
+sudo systemctl restart opla-test.service
