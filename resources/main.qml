@@ -8,7 +8,7 @@ import './' as MyCustomComponents   // all the components in the same directory
 
 ApplicationWindow {
     id: rooteID
-    title: "Color Picker 1.0 (By: AAlizadeh@oplaenergy.com)"
+    title: "Color Picker 1.1 (By: AAlizadeh@oplaenergy.com)"
     x: 750
     y: 500
     width: 600
